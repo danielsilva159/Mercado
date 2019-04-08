@@ -1,61 +1,12 @@
-# processo-seletivo
-O projeto é um  sistema de estoque de supermercado no qual 
-já é possível **exibir** todos os produtos existentes.
+Ol� Criei o projeto que voc�s pediram, mas n�o consegui utiliza o Vue.js.
+Na parte web fico implementado somente a listagem do produto com o create que n�o est� funcionando.
+Mas fazendo os testes com o JUNIT o crud est� funcionando corretamente, tanto na parte do fabricante quanto na
+parte do produto.
 
-É preciso que você implemente as funcionalidades de **inserir**, **editar** e 
-**deletar** um produto. 
-
-# Requisitos
-
-1. Front-end usando HTML, CSS e Javascript
-2. Web Services RESTful em Java usando Jersey
-3. Integração com Banco de Dados 
-4. Testes de integração
-
-# O que fazer agora
-
-Faça um fork desse repositório e divida em commits os passos necessários para a
-produção do resultado final. Quando terminar abra um Pull Request 
-com o resultado, se você nunca usou git crie uma conta no gitlab e 
-dê uma olhada nos links abaixo.
-
-Se você já tem uma conta no github e não deseja criar uma nova no gitlab
-dê um fork neste repositório -> https://github.com/andressavldrs/processo-seletivo
-
-Lembre-se de adicionar um arquivo HOWTO.md descrevendo o necessário para execução 
-da aplicação e dos testes.  
-
-Aqui a maioria das nossas aplicações são em Java no back-end, usando HTML, CSS e 
-Vue.js no front-end, JUnit para os teste de integração e banco de dados em MySQL. Você pode 
-escolher tecnologias de sua preferência desde que cumpra os requisitos.
-
-# Avaliação
-
-O objetivo desse teste é medir o seu conhecimento sobre as ferramentas, arquitetura e 
-boas práticas de programação. 
-
-Você tem o prazo de 1 semana, a partir do dia posterior ao de envio. 
-Mesmo que não complete todo o teste, envie mesmo assim, 
-ele não é de caráter desclassificatório, mas sim, classificatório. 
-Sinta-se a vontade para implementar mais funcionalidades e alterações de interface. 
-
-
-# Links úteis
-
-* Git
-    * [git - guia prático](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
-    * [git - documentacao](https://git-scm.com/book/pt-pt/v2)
-
-* Web services Java e Jersey
-    * [WebService](https://www.ibm.com/developerworks/web/library/wa-aj-tomcat/)
-
-* HTML/CSS e Javascript 
-    * [Tudo sobre Javascript, HTML e CSS](https://www.w3schools.com/whatis/) 
-    * [HTML](https://www.w3schools.com/html/default.asp)
-    * [CSS](https://www.w3schools.com/css/default.asp)
-    * [Javascript](https://www.w3schools.com/js/default.asp)
-    * [bootstrap](https://getbootstrap.com/)
-    * [W3 Bootstrap](https://www.w3schools.com/bootstrap/default.asp)
-    * [Vue JS](https://vuejs.org/) - Uma lib JS baseada em Angular porém mais simples.
-    * [Axio](https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) - Lib JS recomendada para Vue JS para simplificar XMLHttpRequests.
+Para o projeto funciona e preciso importar utilizando projeto maven e depois quando o projeto estive criado, ir em
+properties->project facet, e marca as op��es Dynamic Web Module version 3.0, Java 1.7 ou maior, JAVASCRIPT version 1.0
+JAX-RS(Rest Web Services) version 2.0, JPA version 2.1.
+Depois ir em na pasta META-INF no arquivo persistence.xml para configurar o banco de dados e preciso criar o banco manualmente l� no MYSQL.
+Logo ap�s fazer as configura��es da base de dados ir no pacote com.hepta.mercado.test na class HibernateClass.java e 
+executar o metodo testeUpdate para fazer as cria��es das tabelas na base de dados.
 
